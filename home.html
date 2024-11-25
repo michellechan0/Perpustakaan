@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+{% block konten %}
+    <h1>INPUT DATA PEMINJAMAN</h1>
+    <!-- <form action="/simpan" method="post" >
+        <input type="text" name="nama" placeholder="Enter nama peminjam" ><br>
+        <input type="number" name="kelas" min="10" max="12" placeholder="Enter kelas" ><br>
+        <input type="date" name="tanggal" placeholder="Enter tanggal" ><br>
+        <textarea name="judul" placeholder="Enter judul buku" ></textarea><br> -->
+        <!-- <textarea type="date" name="tanggal" placeholder="Enter tanggal peminjaman"></textarea><br> -->
+        <!-- <button type="submit">KIRIM</button>
+    </form> -->
+    <form action="/simpan" method="post">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Nama</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="nama" required>
+
+        </div>
+        
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Kelas</label>
+          <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"min="10" max="12" name="kelas" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Tanggal</label>
+          <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="tanggal" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Judul</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="judul" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+
+{% endblock %} 
